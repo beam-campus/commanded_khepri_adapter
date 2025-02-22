@@ -39,15 +39,15 @@ defmodule Commanded.EventStore.Adapters.Khepri.MixProject do
     [
       {:dialyze, "~> 0.2.0", only: [:dev]},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:mix_test_watch, "~> 1.1", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.27", only: [:dev], runtime: false},
+      {:ex_doc, "~> 0.37", only: [:dev], runtime: false},
       {:mox, "~> 1.0", only: [:test], runtime: false},
       {:phoenix_pubsub, "~> 2.1.3"},
       {:elixir_uuid, "~> 1.2", override: true},
       {:jason, "~> 1.4.3", optional: true},
-      {:commanded, "~> 1.0"},
-      {:khepri, "~> 0.1.0"}
+      {:commanded, "~> 1.4.8"},
+      {:khepri, "~> 0.16.0"}
     ]
   end
 
@@ -59,13 +59,13 @@ defmodule Commanded.EventStore.Adapters.Khepri.MixProject do
 
   defp docs do
     [
-      main: "Commanded.EventStore.Adapters.Khepri",
-      canonical: "http://hexdocs.pm/commanded_khepri_adapter",
+      main: "Commanded.EventStore.Adapters.Scarab",
+      canonical: "http://hexdocs.pm/commanded_scarab_adapter",
       source_ref: "v#{@version}",
       extra_section: "GUIDES",
       extras: [
         "CHANGELOG.md",
-        "guides/Getting Started.md": [filename: "getting-started", title: "Khepri adapter"],
+        "guides/Getting Started.md": [filename: "getting-started", title: "Scarab Adapter"],
         "guides/Testing.md": [title: "Testing"]
       ]
     ]

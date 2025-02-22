@@ -6,6 +6,10 @@
 .lexical/
 .elixir-tools/
 
+## Library
+/eventstore
+/tmp
+
 
 ## Elixir
 /_build
